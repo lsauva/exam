@@ -6,32 +6,11 @@
 /*   By: lsauvage <lsauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/06 16:29:56 by lsauvage          #+#    #+#             */
-/*   Updated: 2017/12/06 17:46:44 by lsauvage         ###   ########.fr       */
+/*   Updated: 2017/12/13 16:11:08 by lsauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-/*
-** Assignment name  : rev_print
-** Expected files   : rev_print.c
-** Allowed functions: write
-** ----------------------------------------------------------------------------
-**
-** Écrire un programme qui prend une chaîne et l'affiche en ordre inverse suivie
-** d'un newline.
-**
-** Si le nombre d'arguments n'est pas 1, le programme affiche un newline.
-**
-**Exemples:
-**
-** $> ./rev_print "zaz" | cat -e
-** zaz$
-** $> ./rev_print "dub0 a POIL" | cat -e
-** LIOP a 0bud$
-** $> ./rev_print | cat -e
-** $
-*/
 
 void	ft_putchar(char c)
 {
