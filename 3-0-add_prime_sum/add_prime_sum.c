@@ -6,7 +6,7 @@
 /*   By: lsauvage <lsauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/08 14:16:28 by lsauvage          #+#    #+#             */
-/*   Updated: 2018/01/08 14:33:57 by lsauvage         ###   ########.fr       */
+/*   Updated: 2018/01/08 17:27:47 by lsauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@ void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
+
+/*
+** Write an integer on the standard output.
+** Affiche un entier sur la sortie standard
+*/
 
 void	ft_putnbr(int nb)
 {
@@ -40,6 +45,10 @@ void	ft_putnbr(int nb)
 		ft_putchar(nb + '0');
 }
 
+/*
+** Convert a string to int.
+** Conversion d'une chaine de caractere en entier.
+*/
 int		ft_atoi(const char *str)
 {
 	int i;
@@ -66,6 +75,11 @@ int		ft_atoi(const char *str)
 	return (neg * toi);
 }
 
+/*
+** Return 1 if nb is prime, 0 if not.
+** Verifie si nb est premier ou non et retourne 1 ou 0.
+*/
+
 int		ft_is_prime(int nb)
 {
 	int i;
@@ -82,6 +96,11 @@ int		ft_is_prime(int nb)
 	return (1);
 }
 
+/*
+** Make the sum of all prime numbers inferior or equal to nb.
+** Fait la somme de tous les entiers inferieurs ou egaux a nb.
+*/
+
 int		add_prime_sum(int nb)
 {
 	int res;
@@ -95,6 +114,10 @@ int		add_prime_sum(int nb)
 	}
 	return (res);
 }
+
+/*
+** main function.
+*/
 
 int		main(int ac, char **av)
 {
