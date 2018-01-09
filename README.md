@@ -6,7 +6,7 @@
 
 Liste des exercices réalisés lors des sessions d'exam à 42
 
-:zero: ![Level 0](images/level_0.png)
+![Level 0](images/level_0.png)
 
 | Subject             |        Status       |
 |---------------------|---------------------|
@@ -23,13 +23,13 @@ Liste des exercices réalisés lors des sessions d'exam à 42
 
 
 
-:one: ![Level 1](images/level_1.png)
+![Level 1](images/level_1.png)
 
 | Subject                |        Status       |
 |------------------------|---------------------|
 | **first_word**         | :x:  |
 | **ft_putstr**          | :x:  |
-| **ft_strcpy**          | :x:  |
+| **ft_strcpy**          | :page_facing_up:  |
 | **ft_strlen**          | :x:  |
 | **alpha_mirror**       | :white_check_mark:  |
 | **hello**              | :x:  |
@@ -38,7 +38,7 @@ Liste des exercices réalisés lors des sessions d'exam à 42
 | **rot_13**             | :x:  |
 | **rotone**             | :x:  |
 | **search_and_replace** | :x:  |
-| **ulstr**              | :x:  |
+| **ulstr**              | :page_facing_up:  |
 
 ![Level 2](images/level_2.png)
 
@@ -48,7 +48,7 @@ Liste des exercices réalisés lors des sessions d'exam à 42
 | **do_op**          | :white_check_mark:  |
 | **ft_atoi**        | :white_check_mark:  |
 | **ft_strcmp**      | :x:                 |
-| **ft_strdup**      | :x:                 |
+| **ft_strdup**      | :white_check_mark:  |
 | **ft_strrev**      | :white_check_mark:  |
 | **inter**          | :x:                 |
 | **last_word**      | :x:                 |
@@ -63,11 +63,11 @@ Liste des exercices réalisés lors des sessions d'exam à 42
 
 | Subject              |        Status       |
 |----------------------|---------------------|
-| **add_prime_sum**    |:white_check_mark:   |
+| **add_prime_sum**    | :white_check_mark:  |
 | **epur_str**         | :x:                 |
 | **expand_str**       | :x:                 |
-| **ft_atoi_base**     |:white_check_mark:   |
-| **lcm**              |:white_check_mark:   |
+| **ft_atoi_base**     | :white_check_mark:  |
+| **lcm**              | :white_check_mark:  |
 | **ft_list_size**     | :x:                 |
 | **ft_range**         | :x:                 |
 | **ft_rrange**        | :x:                 |
@@ -75,30 +75,30 @@ Liste des exercices réalisés lors des sessions d'exam à 42
 | **paramsum**         | :x:                 |
 | **pgcd**             | :x:                 |
 | **print_hex**        | :x:                 |
-| **rstr_capitalizer** |:white_check_mark:   |
-| **str_capitalizer**  |:white_check_mark:   |
+| **rstr_capitalizer** | :white_check_mark:  |
+| **str_capitalizer**  | :white_check_mark:  |
 | **tab_mult**         | :x:                 |
 
 ![Level 4](images/level_4.png)
 
 | Subject               |        Status       |
 |-----------------------|---------------------|
-| **fprime**            |
-| **ft_itoa**           |
-| **ft_list_foreach**   |
-| **ft_list_remove_if** |
-| **ft_split**          |
-| **rev_wstr**          |
-| **rostring**          |
-| **sort_int_tab**      |
-| **sort_list**         |
+| **fprime**            | :white_check_mark:  |
+| **ft_itoa**           | :page_facing_up:    |
+| **ft_list_foreach**   | :page_facing_up:    |
+| **ft_list_remove_if** | :white_check_mark:  |
+| **ft_split**          | :page_facing_up:    |
+| **rev_wstr**          | :x:                 |
+| **rostring**          |:page_facing_up:     |
+| **sort_int_tab**      |:x:                  |
+| **sort_list**         |:x:                  |
 
 ![Level 5](images/level_5.png)
 
 | Subject            |       Status       |
 |--------------------|--------------------|
-| **brackets**       |
-| **brainfuck**      |
-| **ft_itoa_base**   |
-| **print_memory**   |
-| **rpn_calc**       |
+| **brackets**       | :x: |
+| **brainfuck**      | :x: |
+| **ft_itoa_base**   |:page_facing_up:  |
+| **print_memory**   |:page_facing_up:  |
+| **rpn_calc**       |:page_facing_up:  |
