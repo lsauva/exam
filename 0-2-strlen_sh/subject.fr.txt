@@ -1,0 +1,15 @@
+Assignment name  : strlen_sh
+Expected files   : strlen.sh
+Allowed functions: 
+--------------------------------------------------------------------------------
+
+Écrire un script shell qui affiche la longueur de la chaine de caractères
+présente dans la variable d'environnement FT_LINE, suivie d'un '\n'.
+
+Exemple:
+
+$> echo $FT_LINE
+Les stagiaires du staff ne sentent pas toujours tres bon.
+$> zsh strlen.sh
+57
+$>
