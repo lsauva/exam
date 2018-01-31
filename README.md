@@ -29,7 +29,7 @@ Liste des exercices réalisés lors des sessions d'exam à 42
 |------------------------|---------------------|
 | **first_word**         | :x:  |
 | **ft_putstr**          | :x:  |
-| **ft_strcpy**          | :page_facing_up:  |
+| **ft_strcpy**          | :x: :page_facing_up:  |
 | **ft_strlen**          | :x:  |
 | **alpha_mirror**       | :white_check_mark:  |
 | **hello**              | :x:  |
@@ -38,7 +38,7 @@ Liste des exercices réalisés lors des sessions d'exam à 42
 | **rot_13**             | :x:  |
 | **rotone**             | :x:  |
 | **search_and_replace** | :x:  |
-| **ulstr**              | :page_facing_up:  |
+| **ulstr**              | :x: :page_facing_up:  |
 
 ![Level 2](images/level_2.png)
 
@@ -84,12 +84,12 @@ Liste des exercices réalisés lors des sessions d'exam à 42
 | Subject               |        Status       |
 |-----------------------|---------------------|
 | **fprime**            | :white_check_mark:  |
-| **ft_itoa**           | :page_facing_up:    |
+| **ft_itoa**           | :x::page_facing_up:    |
 | **ft_list_foreach**   | :page_facing_up:    |
 | **ft_list_remove_if** | :white_check_mark:  |
-| **ft_split**          | :page_facing_up:    |
+| **ft_split**          | :x::page_facing_up:    |
 | **rev_wstr**          | :x:                 |
-| **rostring**          |:page_facing_up:     |
+| **rostring**          | :x::page_facing_up:     |
 | **sort_int_tab**      |:x:                  |
 | **sort_list**         |:x:                  |
 
@@ -99,6 +99,6 @@ Liste des exercices réalisés lors des sessions d'exam à 42
 |--------------------|--------------------|
 | **brackets**       | :x: |
 | **brainfuck**      | :x: |
-| **ft_itoa_base**   |:page_facing_up:  |
-| **print_memory**   |:page_facing_up:  |
-| **rpn_calc**       |:page_facing_up:  |
+| **ft_itoa_base**   | :x::page_facing_up:  |
+| **print_memory**   | :x::page_facing_up:  |
+| **rpn_calc**       | :x::page_facing_up:  |
