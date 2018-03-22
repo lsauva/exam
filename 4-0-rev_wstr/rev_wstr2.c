@@ -6,7 +6,7 @@
 /*   By: lsauvage <lsauvage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/31 11:29:37 by lsauvage          #+#    #+#             */
-/*   Updated: 2018/01/31 19:06:35 by lsauvage         ###   ########.fr       */
+/*   Updated: 2018/02/01 14:48:22 by lsauvage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,15 @@ void    rev_wstr(char *str)
 
     wc = 1;
     i = 0;
+    a = 0;
     len = ft_strlen(str);
-    while (--len && !ft_isblank(str[len])
+    while (--len && !ft_isblank(str[len]))
         i++;
+    while(a < i)
+    {
+        write(1, str[len], i);
+        a++;
+    }
 }
 
 int     main(int ac, char **av)
