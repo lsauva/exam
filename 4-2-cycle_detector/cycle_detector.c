@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "list.h"
+#include "./list.h"
 
 int cycle_detector(const t_list *list)
 {
