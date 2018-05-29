@@ -3,52 +3,98 @@
 /*                                                        :::      ::::::::   */
 /*   moment.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lsauvage <lsauvage@student.42.fr>          +#+  +:+       +#+        */
+/*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/16 15:19:36 by lsauvage          #+#    #+#             */
-/*   Updated: 2018/04/16 17:49:11 by lsauvage         ###   ########.fr       */
+/*   Created: 2018/05/15 10:02:48 by exam              #+#    #+#             */
+/*   Updated: 2018/05/15 13:03:31 by exam             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
+
+int			ft_strlen(char *s)
+{
+	int		i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
+
+unsigned int		ft_uintlen(unsigned int nb)
+{
+	unsigned int	i;
+
+	i = 0;
+	if (nb == 0)
+		i = 1;
+	while (nb > 0)
+	{
+		nb /= 10;
+		i++;
+	}
+	return (i);
+}
+
+char		*ft_strcat(char *s1, char *s2)
+{
+	char	*res;
+	int		i;
+	int		j;
+
+	if (!(res = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1))))
+		return (NULL);
+	i = 0;
+	j = 0;
+	while (s1[i])
+		res[j++] = s1[i++];
+	i = 0;
+	while (s2[i])
+		res[j++] = s2[i++];
+	res[j] = '\0';
+	return (res);
+}
+
+char		*ft_utoa(unsigned int nb)
+{
+	int		len;
+	char	*tab;
+
+	len = ft_uintlen(nb);
+	if (!(tab = malloc(sizeof(char) * len + 1)))
+		return (NULL);
+	tab[len] = '\0';
+	while (nb != 0)
+	{
+		tab[--len] = (nb % 10) + '0';
+		nb = nb / 10;
+	}
+	return (tab);
+}
 
 char	*moment(unsigned int duration)
 {
-	char			*ret;
-	unsigned int	converter[5] = {60, 3600, 86400, 2592000, 31104000};
-	char			**units;
-	int				i;
-
-	if (!(units = (char **)malloc(sizeof(char *) * 5)))
-	{
-		return (NULL);
-	}
-	ret = NULL;
-	i = 0;
-	units[0] = "seconds";
-	units[1] = "minutes";
-	units[2] = "hours";
-	units[3] = "days";
-	units[4] = "months";
-	while (i < 5)
-	{
-	//	duration /= converter[i];
-		if (duration == 0 || duration < converter[i])
-		{
-			return (units[i]);
-		}
-		i++;
-	}
-	return (0);
-}
-
-int main(int ac, char **av)
-{
-	if (ac == 2)
-	{
-		printf("secondes : %d\n", atoi(av[1]));
-		printf("duree : %s\n", moment(atoi(av[1])));
-	}
-	return (0);
+	if (duration == 0)
+		return ("0 seconds ago.");
+	else if (duration == 1)
+		return ("1 second ago.");
+	else if (duration < 60)
+		return (ft_strcat(ft_utoa(duration), " seconds ago."));
+	else if (duration < 120)
+		return ("1 minute ago.");
+	else if (duration < 3600)
+		return (ft_strcat(ft_utoa(duration / 60), " minutes ago."));
+	else if (duration < 7200)
+		return ("1 hour ago.");
+	else if (duration < 86400)
+		return (ft_strcat(ft_utoa(duration / 3600), " hours ago."));
+	else if (duration < 172800)
+		return ("1 day ago.");
+	else if (duration < 2592000)
+		return (ft_strcat(ft_utoa(duration / 86400), " days ago."));
+	else if (duration < 5184000)
+		return ("1 month ago.");
+	else
+		return (ft_strcat(ft_utoa(duration / 2592000), " months ago."));
 }
