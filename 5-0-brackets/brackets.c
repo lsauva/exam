@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   brackets.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lsauvage <lsauvage@student.42.fr>          +#+  +:+       +#+        */
+/*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/03/29 17:00:37 by lsauvage          #+#    #+#             */
-/*   Updated: 2018/03/29 17:50:31 by lsauvage         ###   ########.fr       */
+/*   Created: 2018/05/29 10:22:27 by exam              #+#    #+#             */
+/*   Updated: 2018/05/29 11:48:18 by exam             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,48 +15,48 @@
 int		brackets(char *s)
 {
 	int		a;
-	int		p;
 	int		c;
+	int		p;
 	char	last;
 
 	a = 0;
-	p = 0;
 	c = 0;
+	p = 0;
 	while (*s)
 	{
-		if (*s == '(')
-			++p;
 		if (*s == '{')
-			++a;
+			a++;
 		if (*s == '[')
-			++c;
+			c++;
+		if (*s == '(')
+			p++;
+		if (*s == '}')
+		{
+			--a;
+			if (last == '[' || last == '(')
+				return (0);
+		}
+		if (*s == ']')
+		{
+			--c;
+			if (last == '{' || last == '(')
+				return (0);
+		}
 		if (*s == ')')
 		{
 			--p;
 			if (last == '{' || last == '[')
 				return (0);
 		}
-		if (*s == '}')
-		{
-			--a;
-			if (last == '(' || last == '[')
-				return (0);
-		}
-		if (*s == ']')
-		{
-			--c;
-			if (last == '(' || last == '{')
-				return (0);
-		}
-		if (*s == '(' || *s == ')' || *s == '[' 
-				|| *s == ']' || *s == '{' || *s == '}')
+		if (*s == '{' || *s == '[' || *s == '(' || *s == '}' || *s == ']'
+				|| *s == ')')
 			last = *s;
-		++s;
+		s++;
 	}
 	return (a == 0 && c == 0 && p == 0);
 }
 
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	int i;
 
