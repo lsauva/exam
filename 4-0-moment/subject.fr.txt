@@ -1,0 +1,28 @@
+Assignment name  : moment
+Expected files   : moment.c
+Allowed functions: malloc, free
+--------------------------------------------------------------------------------
+
+Créer une fonction qui prends un unsigned int en paramètre, représentant une 
+potentielle durée en secondes, et renvoie une chaîne de caractères qui indique le
+nombre de secondes / minutes / heures / jours ou mois écoulés.
+On supposera que les mois font 30 jours de long et on ignore les années bissextiles.
+
+Le format de sortie sera :
+    
+	xxx {second(s)|minute(s)|hour(s)|day(s)|month(s)} ago.
+
+Votre fonction ne renverra que la durée avec la valeur la plus basse possible.
+La fonction sera prototypée comme suit:
+
+    char    *moment(unsigned int duration)
+
+Exemples:
+
+moment(0)       => 0 seconds ago.
+moment(1)       => 1 second ago.
+moment(30)      => 30 seconds ago.
+moment(65)      => 1 minute ago.
+moment(120)     => 2 minutes ago.
+moment(2400)    => 40 minutes ago.
+moment(3735)    => 1 hour ago.

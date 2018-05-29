@@ -1,0 +1,31 @@
+Assignment name  : biggest_pal
+Expected files   : *.c, *.h
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Écrire un programme nommé biggest_pal, qui prend en paramètre une chaîne de
+caractères, et qui affiche le plus grand palindrome trouvé dans cette chaîne suivi
+d'une newline.
+
+La chaine passée en paramètre ne contient uniquement que des lettres minuscules.
+
+Si il y a 2 palindromes de meme taille, celui à imprimer sera le dernier rencontré.
+
+Si le programme reçoit un nombre d'arguments différent de 1, vous ne renverrez
+qu'une newline.
+
+Exemples:
+
+$> biggest_pal "abcba"
+abcba
+$> biggest_pal "aaaaaaaaaabbcbbaaaa"
+aaaabbcbbaaaa
+$> biggest_pal "aooibdaoiwhoihwdoinzeldaisaboyobasiadlezfdsfnslk"
+zeldaisaboyobasiadlez
+$> biggest_pal "aeibaabaammaabaalek"
+aabaammaabaa
+$> biggest_pal abeb qpinqwjobo qkmnwoiq
+
+$> biggest_pal
+
+$>
